@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  www:
+    build: docker/php
+    container_name: app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./docker/php/vhosts:/etc/apache2/sites-enabled
+      - ./:/var/www
+    restart: always
+    networks:
+      - app_test
+
+networks:
+  app_test:
