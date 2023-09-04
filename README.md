@@ -23,7 +23,13 @@ Accedemos al contenedor con el siguiente comando:
 docker-compose run www bash
 </pre>
 
+Nos movemos al directorio de Symfony
+<pre>
+cd app
+</pre>
 una vez dentro del contenedor se instalan las actualizaciones y dependencias del proyecto con sl siguiente commando
 <pre>
 composer install
 </pre>
+
+ya estaría listo para usar.
